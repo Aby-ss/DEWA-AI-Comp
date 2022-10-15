@@ -7,6 +7,25 @@ This is the official source code for the DEWA 2022 AI competition, All files are
 
 To - Do :
 
-- SSD Model for Camera detection ✅
-- Chat Bot | JSON Data | Response Module ✅
-- Hardware 🕕 *pending*
+-------- PLANS -----------
+
+------- BACKEND -------
+- A.I ✅
+	* Object Detection
+	* Emotion Detection : Detect Drowsiness and remind of tasks (if
+	  present)
+	* Text Agent ✅
+		* Be able to set reminders
+		* Create a wake-up schedule and proper day schedule as the
+		  user insists
+		* Use web scraping for most of the data || ? API's ?
+	* Send reminders to the user's connected phone for reminders or other
+	  notifications ✅
+-------- ... -------- 
+
+------- MODEL -------
+- Model : 🕕
+	* WAIT *
+
+
+-------- ... -------- 
