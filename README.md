@@ -21,7 +21,7 @@
 		* Use web scraping for most of the data || ? API's ?
 	* Send reminders to the user's connected phone for reminders or other
 	  notifications ✅
--------- ... -------- 
+
 
 ### ------- MODEL -------
 - Model : 🕕
