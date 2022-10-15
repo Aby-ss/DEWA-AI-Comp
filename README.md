@@ -2,14 +2,14 @@
 🤖 Project Files and Source Code for the 2022 DEWA AI competition
 
 
-This is the official source code for the DEWA 2022 AI competition, All files are to be updated by the project contributers.
+### This is the official source code for the DEWA 2022 AI competition, All files are to be updated by the project contributers.
 
 
-To - Do :
+## To - Do :
 
--------- PLANS -----------
+## -------- PLANS -----------
 
-------- BACKEND -------
+### ------- BACKEND -------
 - A.I ✅
 	* Object Detection
 	* Emotion Detection : Detect Drowsiness and remind of tasks (if
@@ -23,7 +23,7 @@ To - Do :
 	  notifications ✅
 -------- ... -------- 
 
-------- MODEL -------
+### ------- MODEL -------
 - Model : 🕕
 	* WAIT *
 
