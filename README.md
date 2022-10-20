@@ -12,12 +12,10 @@
 ### ------- BACKEND -------
 - A.I ✅
 	* Object Detection
-	* Emotion Detection : Detect Drowsiness and remind of tasks (if
-	  present)
+	* Emotion Detection
 	* Text Agent ✅
-		* Be able to set reminders
-		* Create a wake-up schedule and proper day schedule as the
-		  user insists
-		* Use web scraping for most of the data || ? API's ?
-	* Send reminders to the user's connected phone for reminders or other
-	  notifications ✅
+		* Be able to **add faces** in the database
+		* **Create a database for all the employee's**
+		* Use **JSON for the database**
+	* Send notifications ✅ to the user's connected device or Raspberry Pi
+	  
