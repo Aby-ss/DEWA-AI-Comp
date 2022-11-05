@@ -11,6 +11,14 @@ from datetime import datetime
 import os
 import glob
 
+from rich.live import Live
+
+import psutil
+import platform
+import keyboard
+
+from time import sleep
+
 install(show_locals = True)
 
 layout = Layout()
@@ -31,7 +39,7 @@ class Header:
     
 images_path = glob.glob(os.path.join(images_path, "*.*"))
 
-general_info = Panel(f"[b green]Number of Encoded faces in system : {len(images_path)}[/]\n")
+general_info = Panel(f"[b green]Number of Encoded faces in system : {len(images_path)}[/]")
     
 layout.split_column(
     Layout(name = "header"),
@@ -54,5 +62,18 @@ layout["footer"].size = 3
 layout["body"].size = 35
 
 layout["header"].update(Header())
+
+import cpu as pc
+import mem as memory
+
+with Live(layout, refresh_per_second = 1, screen = True):
+    while True:
+            
+        layout["r_upper"].update(pc.CPU(psutil.cpu_percent(), 50))
+        
+        if keyboard.is_pressed("esc"):
+            sys.exit()
+            
+        sleep(0.2)
 
 print(layout)
