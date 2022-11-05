@@ -37,6 +37,9 @@ layout["body"].split_row(
 )
 
 layout["header"].size = 3
+layout["footer"].size = 3
+layout["body"].size = 35
+
 layout["header"].update(Header())
 
 print(layout)
