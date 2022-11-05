@@ -8,7 +8,7 @@ def obj_detection():
     
     recording_flag = False
     
-    capture = cv2.VideoCapture(1)
+    capture = cv2.VideoCapture(0)
     codec = cv2.VideoWriter_fourcc(*'XVID')
     
     classes = ["background", "aeroplane", "bicycle", "bird", "boat", "bottle", "bus", "car",
