@@ -28,7 +28,7 @@ layout.split_column(
     Layout(name = "footer")
 )
 
-layout.split_row(
+layout["body"].split_row(
     Layout(name = "upper"),
     Layout(name = "lower")
 )
