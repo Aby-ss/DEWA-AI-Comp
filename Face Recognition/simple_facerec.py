@@ -15,6 +15,7 @@ console = Console()
 from rich.traceback import install
 install(show_locals = True)
 
+
 class SimpleFacerec:
     def __init__(self):
         self.known_face_encodings = []
