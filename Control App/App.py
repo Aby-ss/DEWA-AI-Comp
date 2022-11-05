@@ -4,6 +4,7 @@ from rich.traceback import install
 
 from rich import box
 from rich import print
+from rich.table import Table
 from rich.layout import Layout
 
 install(show_locals = True)
@@ -28,7 +29,7 @@ layout.split_column(
     Layout(name = "footer")
 )
 
-layout.split_row(
+layout["body"].split_row(
     Layout(name = "upper"),
     Layout(name = "lower")
 )
