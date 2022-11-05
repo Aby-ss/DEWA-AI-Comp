@@ -8,6 +8,8 @@ from rich.table import Table
 from rich.layout import Layout
 
 from datetime import datetime
+import os
+import glob
 
 install(show_locals = True)
 
@@ -27,6 +29,10 @@ class Header:
         )
         return Panel(grid, style="white on blue")
     
+images_path = glob.glob(os.path.join(images_path, "*.*"))
+
+general_info = Panel(f"[b green]Number of Encoded faces in system : {len(images_path)}[/]\n")
+    
 layout.split_column(
     Layout(name = "header"),
     Layout(name = "body"),
@@ -34,8 +40,13 @@ layout.split_column(
 )
 
 layout["body"].split_row(
-    Layout(name = "upper"),
-    Layout(name = "lower")
+    Layout(name = "right"),
+    Layout(name = "left")
+)
+
+layout["right"].split_column(
+    Layout(name = "r_upper"),
+    Layout(name = "r_lower")
 )
 
 layout["header"].size = 3
