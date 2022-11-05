@@ -4,7 +4,6 @@ import imutils
 import threading
 import winsound
 
-
 from rich import box
 from rich import print
 from rich.panel import Panel
