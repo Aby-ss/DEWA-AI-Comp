@@ -36,6 +36,7 @@ layout["body"].split_row(
     Layout(name = "lower")
 )
 
+layout["header"].size = 3
 layout["header"].update(Header())
 
 print(layout)
