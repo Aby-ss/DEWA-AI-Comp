@@ -7,6 +7,8 @@ from rich import print
 from rich.table import Table
 from rich.layout import Layout
 
+from datetime import datetime
+
 install(show_locals = True)
 
 layout = Layout()
