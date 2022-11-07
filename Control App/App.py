@@ -8,6 +8,9 @@ from rich.table import Table
 from rich.layout import Layout
 
 from datetime import datetime
+from time import sleep
+import keyboard
+import psutil
 import os
 import glob
 
@@ -54,5 +57,20 @@ layout["footer"].size = 3
 layout["body"].size = 35
 
 layout["header"].update(Header())
+
+from rich.live import Live
+import cpu as pc
+import mem as memory
+
+
+
+with Live(layout, refresh_per_second = 4, screen = True):
+    while True:
+        sleep(1)
+        layout["r_upper"].update(pc.CPU(psutil.cpu_percent(), 50))
+        layout["r_lower"].update(memory.MEM(psutil.virtual_memory(), 50))
+
+        if keyboard.is_pressed("esc"):
+            exit()
 
 print(layout)
