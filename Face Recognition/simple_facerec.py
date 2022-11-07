@@ -95,3 +95,5 @@ class SimpleFacerec:
         face_locations = np.array(face_locations)
         face_locations = face_locations / self.frame_resizing
         return face_locations.astype(int), face_names
+
+        
