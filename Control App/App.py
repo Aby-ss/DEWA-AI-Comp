@@ -31,10 +31,13 @@ class Header:
             datetime.now().ctime().replace(":", "[blink]:[/]"),
         )
         return Panel(grid, style="white on blue")
-    
-images_path = glob.glob(os.path.join(images_path, "*.*"))
 
-general_info = Panel(f"[b green]Number of Encoded faces in system : {len(images_path)}[/]\n")
+def encoded_faces():
+    images_path = glob.glob(os.path.join(images_path, "*.*"))
+
+    general_info = Panel(f"[b green]Number of Encoded faces in system : {len(images_path)}[/]\n")
+
+    return general_info
     
 layout.split_column(
     Layout(name = "header"),
@@ -57,6 +60,7 @@ layout["footer"].size = 3
 layout["body"].size = 35
 
 layout["header"].update(Header())
+layout["left"].update(encoded_faces())
 
 from rich.live import Live
 import cpu as pc
