@@ -16,7 +16,7 @@ rgb_img2 = cv2.cvtColor(img2, cv2.COLOR_BGR2RGB)
 img_encoding2 = face_recognition.face_encodings(rgb_img2)[0]
 
 result = face_recognition.compare_faces([img_encoding], img_encoding2)
-console.log(Panel.fit(f"Result: {result}", border_style="Bold green", box = box.SQUARE))
+console.log(Panel(f"Result: {result}", border_style="Bold green", box = box.SQUARE))
 
 cv2.imshow("Img", img)
 cv2.imshow("Img 2", img2)
