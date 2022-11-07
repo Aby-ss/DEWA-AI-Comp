@@ -27,7 +27,7 @@ def MEM(mem_usage, bars = 50):
     
     mem_panel = Panel(f"\n \n \n{mem_info}", border_style = "bold", box = box.SQUARE, title = f"[b]Total [C:/Users/hadir]: {stat[0]}", title_align = "left")
 
-    return Panel(mem_panel, title = f"{stat[0]}", title_align = "left",box = box.SQUARE)
+    return Panel.fit(mem_panel, title = f"{path}", title_align = "left",box = box.SQUARE)
 
 def more_mem_info():
     free_mem = psutil.virtual_memory()[4]

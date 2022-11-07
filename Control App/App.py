@@ -14,6 +14,7 @@ import glob
 from rich.live import Live
 
 import psutil
+import shutil
 import platform
 import keyboard
 
@@ -36,10 +37,12 @@ class Header:
             datetime.now().ctime().replace(":", "[blink]:[/]"),
         )
         return Panel(grid, style="white on blue")
-    
-images_path = glob.glob(os.path.join(images_path, "*.*"))
+   
+def general(): 
+    images_path = glob.glob(os.path.join("images/", "*.*"))
 
-general_info = Panel(f"[b green]Number of Encoded faces in system : {len(images_path)}[/]")
+    general_info = Panel(f"[b green]Number of Encoded faces in system : {len(images_path)}[/]")
+    return general_info
     
 layout.split_column(
     Layout(name = "header"),
@@ -60,6 +63,7 @@ layout["right"].split_column(
 layout["header"].size = 3
 layout["footer"].size = 3
 layout["body"].size = 35
+layout["r_upper"].size = 10
 
 layout["header"].update(Header())
 
@@ -70,6 +74,7 @@ with Live(layout, refresh_per_second = 1, screen = True):
     while True:
             
         layout["r_upper"].update(pc.CPU(psutil.cpu_percent(), 50))
+        layout["r_lower"].update(memory.MEM(psutil.virtual_memory().percent, 50))
         
         if keyboard.is_pressed("esc"):
             sys.exit()
