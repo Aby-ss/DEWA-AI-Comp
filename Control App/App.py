@@ -8,6 +8,9 @@ from rich.table import Table
 from rich.layout import Layout
 
 from datetime import datetime
+from time import sleep
+import keyboard
+import psutil
 import os
 import glob
 
@@ -33,7 +36,7 @@ class Header:
         grid.add_column(justify="center", ratio=1)
         grid.add_column(justify="right")
         grid.add_row(
-            "[b]LOGIC GATE[/b] control application",
+            "[b]LOGIC GATE[/b]control application",
             datetime.now().ctime().replace(":", "[blink]:[/]"),
         )
         return Panel(grid, style="white on blue")
@@ -80,5 +83,21 @@ with Live(layout, refresh_per_second = 1, screen = True):
             sys.exit()
             
         sleep(0.2)
+
+
+from rich.live import Live
+import cpu as pc
+import mem as memory
+
+
+
+with Live(layout, refresh_per_second = 4, screen = True):
+    while True:
+        sleep(1)
+        layout["r_upper"].update(pc.CPU(psutil.cpu_percent(), 50))
+        layout["r_lower"].update(memory.MEM(psutil.virtual_memory(), 50))
+
+        if keyboard.is_pressed("esc"):
+            exit()
 
 print(layout)
