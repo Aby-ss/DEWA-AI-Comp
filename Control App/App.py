@@ -40,11 +40,11 @@ class Header:
             datetime.now().ctime().replace(":", "[blink]:[/]"),
         )
         return Panel(grid, style="white on blue")
-   
-def general(): 
-    images_path = glob.glob(os.path.join("images/", "*.*"))
+    
+images_path = glob.glob(os.path.join(images_path, "*.*"))
 
-    general_info = Panel(f"[b green]Number of Encoded faces in system : {len(images_path)}[/]")
+    general_info = Panel(f"[b green]Number of Encoded faces in system : {len(images_path)}[/]\n")
+
     return general_info
     
 layout.split_column(
@@ -70,24 +70,8 @@ layout["r_upper"].size = 10
 
 layout["header"].update(Header())
 
-import cpu as pc
-import mem as memory
-
-with Live(layout, refresh_per_second = 1, screen = True):
-    while True:
-            
-        layout["r_upper"].update(pc.CPU(psutil.cpu_percent(), 50))
-        layout["r_lower"].update(memory.MEM(psutil.virtual_memory().percent, 50))
-        
-        if keyboard.is_pressed("esc"):
-            sys.exit()
-            
-        sleep(0.2)
-
-
 from rich.live import Live
 import cpu as pc
-import mem as memory
 
 
 
@@ -95,7 +79,6 @@ with Live(layout, refresh_per_second = 4, screen = True):
     while True:
         sleep(1)
         layout["r_upper"].update(pc.CPU(psutil.cpu_percent(), 50))
-        layout["r_lower"].update(memory.MEM(psutil.virtual_memory(), 50))
 
         if keyboard.is_pressed("esc"):
             exit()
