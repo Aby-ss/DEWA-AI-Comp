@@ -43,9 +43,6 @@ class Header:
     
 images_path = glob.glob(os.path.join(images_path, "*.*"))
 
-    general_info = Panel(f"[b green]Number of Encoded faces in system : {len(images_path)}[/]\n")
-
-    return general_info
     
 layout.split_column(
     Layout(name = "header"),
