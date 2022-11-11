@@ -1,21 +1,27 @@
 import numpy as np
+import pathlib
 import cv2
-face_cascade = cv2.CascadeClassifier("App UI\\haarcascade_frontalface_default.xml")
+
+from rich.traceback import install
+install(show_locals = True)
+
+
+face_cascade =  "C:\\Users\\hadir\\Documents\\VSC - Projects\\DEWA-AI-Comp\\App UI\\Code\\haarcascade_frontalface_default.xml"
   
-image = cv2.imread('test.jpg')
+image = cv2.imread("test.jpg")
 grayImage = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
   
-faces = face_cascade.detectMultiScale(grayImage)
+faces = face_cascade.detectMultiScale(grayImage, 1.3, 5)
   
 print( type(faces))
   
 if len(faces) == 0:
-    print( "No faces found")
+    print("No faces found")
   
 else:
-    print (faces)
-    print( faces.shape)
-    print( "Number of faces detected: " + str(faces.shape[0]))
+    print(faces)
+    print(faces.shape)
+    print("Number of faces detected: " + str(faces.shape[0]))
   
     for (x,y,w,h) in faces:
         cv2.rectangle(image,(x,y),(x+w,y+h),(0,255,0),1)
