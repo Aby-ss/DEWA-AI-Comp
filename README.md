@@ -7,9 +7,17 @@
 
 ## To - Do :
 
-## -------- PLANS -----------
+## FRONTEND
 
-### ------- BACKEND -------
+- App 🟧
+	* UI ✅
+	* Functions && Backend Code 🕕
+		* Motor Code ✅
+		* Camera Functions 🕕
+		* Alarm System ✅
+	* Deployment 🟧
+
+##  BACKEND 
 - A.I ✅
 	* Object Detection
 	* Emotion Detection
