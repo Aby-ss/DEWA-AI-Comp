@@ -1,7 +1,0 @@
-cmake
-dlib
-face_recognition
-numpy
-opencv-python
-rich
-rich-tools
