@@ -1,6 +1,6 @@
 import numpy as np
 import cv2
-img = cv2.imread('Pictures/image.png')
+img = cv2.imread('Pictures/image.jpg')
 blur = cv2.GaussianBlur(img, (7, 7), 2)
 h, w = img.shape[:2]
 # Morphological gradient
