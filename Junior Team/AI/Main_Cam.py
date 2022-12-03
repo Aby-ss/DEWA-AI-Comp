@@ -4,7 +4,7 @@ import cv2
 from rich.traceback import install
 install(show_locals=True)
 
-img = cv2.imread("C:\\Users\\hadir\\Documents\\VSC - Projects\\DEWA-AI-Comp\\Junior Team\\Pictures\\image.jpg", 1)
+img = cv2.imread("C:\\Users\\hadir\\Documents\\VSC - Projects\\DEWA-AI-Comp\\Junior Team\\Pictures\\pipe#2.jpg", 1)
 
 blur = cv2.GaussianBlur(img, (7, 7), 2)
 h, w = img.shape[:2]
