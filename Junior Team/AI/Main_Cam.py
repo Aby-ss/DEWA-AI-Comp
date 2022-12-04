@@ -11,7 +11,7 @@ h, w = img.shape[:2]
 
 # Binarize gradient
 
-kernel = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (7, 7))
+kernel = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (4, 4))
 gradient = cv2.morphologyEx(blur, cv2.MORPH_GRADIENT, kernel)
 
 lowerb = np.array([0, 0, 0])
