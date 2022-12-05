@@ -135,7 +135,7 @@ class Ui_Background(object):
 
     def retranslateUi(self, Background):
         _translate = QtCore.QCoreApplication.translate
-        Background.setWindowTitle(_translate("Background", "Form"))
+        Background.setWindowTitle(_translate("Background", "LOGIC GATE"))
         self.header_label.setText(_translate("Background", "LOGIC GATE - DEWA AI COMP"))
         self.footer_label.setText(_translate("Background", "RAO | ADAM | NAOMI"))
         self.Forward_btn.setText(_translate("Background", "Forward"))
