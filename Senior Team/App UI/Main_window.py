@@ -114,7 +114,7 @@ class Ui_Background(object):
         self.Alarm_system = QtWidgets.QWidget()
         self.Alarm_system.setObjectName("Alarm_system")
         self.pushButton = QtWidgets.QPushButton(self.Alarm_system)
-        self.pushButton.setGeometry(QtCore.QRect(410, 490, 241, 61))
+        self.pushButton.setGeometry(QtCore.QRect(410, 490, 241, 61))        
         font = QtGui.QFont()
         font.setFamily("Cascadia Code SemiBold")
         font.setPointSize(10)
@@ -137,7 +137,7 @@ class Ui_Background(object):
         _translate = QtCore.QCoreApplication.translate
         Background.setWindowTitle(_translate("Background", "LOGIC GATE"))
         self.header_label.setText(_translate("Background", "LOGIC GATE - DEWA AI COMP"))
-        self.footer_label.setText(_translate("Background", "RAO | ADAM | NAOMI"))
+        self.footer_label.setText(_translate("Background", "NAOMI | RAO | ADAM"))
         self.Forward_btn.setText(_translate("Background", "Forward"))
         self.right_btn.setText(_translate("Background", "Right"))
         self.left_btn.setText(_translate("Background", "Left"))
