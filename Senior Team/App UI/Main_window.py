@@ -137,7 +137,7 @@ class Ui_Background(object):
         _translate = QtCore.QCoreApplication.translate
         Background.setWindowTitle(_translate("Background", "LOGIC GATE"))
         self.header_label.setText(_translate("Background", "LOGIC GATE - DEWA AI COMP"))
-        self.footer_label.setText(_translate("Background", "NAOMI | RAO | ADAM"))
+        self.footer_label.setText(_translate("Background", "NAOMI | RAO | ADAM | DIA"))
         self.Forward_btn.setText(_translate("Background", "Forward"))
         self.right_btn.setText(_translate("Background", "Right"))
         self.left_btn.setText(_translate("Background", "Left"))
