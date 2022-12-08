@@ -83,7 +83,7 @@
      </font>
     </property>
     <property name="text">
-     <string>RAO | ADAM | NAOMI</string>
+     <string>NAOMI | RAO | ADAM | DIA</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
