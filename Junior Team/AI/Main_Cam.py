@@ -7,7 +7,10 @@ from rich import box
 from rich.traceback import install
 install(show_locals=True)
 
-img = cv2.imread("C:\\Users\\hadir\\Documents\\VSC - Projects\\DEWA-AI-Comp\\Junior Team\\Pictures\\pipe#4.jpg", 1)
+img = cv2.VideoCapture(0)
+
+ret, frame = img.read()
+cv2.imshow("Camera feed", frame)
 
 blur = cv2.GaussianBlur(img, (7, 7), 2)
 h, w = img.shape[:2]
@@ -28,4 +31,5 @@ k = cv2.waitKey(0)
 if( k == ord('g') ):
   cv2.imwrite('Detected Image', image )
   print(Panel("Image saved", box = box.SQUARE, border_style = "Bold Red"))
+  img.release()
   cv2.destroyAllWindows()

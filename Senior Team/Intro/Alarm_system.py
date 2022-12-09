@@ -15,7 +15,7 @@ def alarm_bleep():
     for _ in range(5):
         if not alarm_mode:
             break
-        print(Panel("[b]ALARM !!", title = "[b]ALERT 🟥", title_align = "left", box = box.SQUARE, border_style = "bold red"))
+        print(Panel.fit("[b]ALARM !!", title = "[b]ALERT 🟥", title_align = "left", box = box.SQUARE, border_style = "bold red"))
         winsound.Beep(2500, 100)
     alarm = False
 
