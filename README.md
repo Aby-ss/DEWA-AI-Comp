@@ -2,7 +2,7 @@
 🤖 Project Files and Source Code for the 2022 DEWA AI competition
 
 ## Members
-Senior Team : Rao (@CodingAssassins) | Adam Bassam (@moonlightdisc) | Naomi 
+Senior Team : Rao (@CodingAssassins) | Naomi | Adam Bassam (@moonlightdisc)  
 
 Junior Team : Jack | Crispher | Hannah | Harvent
 
