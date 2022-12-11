@@ -119,7 +119,7 @@ class Header:
 
 
 def robofunctions():
-    funcs = Panel("We used a variety of components in the robot, as well as the majority of the kit given. Cybot comes with the following features:[b red]Speakers[/]for the alarm when in Sentry Mode,[b red]Rigid base[/] and [b red]supporting wheels[/]\nfor improved mobility, [b red]configurable database[/], [b red]translucent body[/]for clear visibility of the interiors, [b red]Camera[/] for video feed,\nand plenty of other aspects", title = "Robot features", title_align = "left", box = box.SQUARE, border_style = "bold green")
+    funcs = Panel("We used a variety of components in the robot, as well as the majority of the kit given. Cybot comes with the following features:[b red]Speakers[/]for the alarm when in Sentry Mode,[b red]Rigid base[/] and [b red]supporting wheels[/]\nfor improved mobility, [b red]configurable database[/], [b red]translucent body[/]for clear visibility of the interiors, [b red]Camera[/] for video feed,\nand plenty of other aspects.\n\n\nCybot can [b blue]work in tough situations[/] when the building's security is not present. It [b blue]has a performance analysis system[\] for monitoring its health and providing a better picture to the maintenance staff. Cybot [b blue]can operate in a variety of temperatures[/] without difficulty. The robot is [b blue]easily disassembled[/] for maintenance.", title = "Robot features", title_align = "left", box = box.SQUARE, border_style = "bold green")
     
     return funcs
 
