@@ -5,6 +5,8 @@ from rich.console import Console
 from rich.progress import Progress
 from rich.prompt import Prompt, Confirm
 
+import keyboard
+
 from time import sleep
 
 console = Console()
@@ -42,3 +44,5 @@ print(Panel.fit("[b red]The Edge Detection[/] feature detects all the edges of a
 sleep(15)
 
 
+if keyboard.is_pressed("q"):
+    exit()
