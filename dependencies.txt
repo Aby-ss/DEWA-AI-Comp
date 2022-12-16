@@ -1,0 +1,7 @@
+moviepy
+rich
+opencv-python
+PyQt5
+face-recognition
+keyboard
+guizero
