@@ -3,7 +3,7 @@
 
 ## Disclaimer ⚠
 Before testing or running the code :
-Use 'pip install dependencies.txt' to install all the required packages and dependencies
+Use `pip install dependencies.txt` to install all the required packages and dependencies
 
 
 ## Members 👦🏻👩🏻
