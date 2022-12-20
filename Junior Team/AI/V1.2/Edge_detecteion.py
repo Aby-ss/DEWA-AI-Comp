@@ -26,7 +26,7 @@ while(True):
     gray = cv2.Canny(frame, 100, 100)
     
     # output the frame
-    out.write(frame) 
+    out.write(canny) 
     
     # The original input frame is shown in the window 
     cv2.imshow('Original', frame)
