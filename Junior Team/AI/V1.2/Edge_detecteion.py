@@ -12,8 +12,8 @@ install(show_locals = True)
 cap = cv2.VideoCapture(0)  
 
 # Define the codec and create VideoWriter object
-fourcc = cv2.VideoWriter_fourcc(*'mp4v')
-out = cv2.VideoWriter('output.mp4', fourcc, 20.0, (640, 480))
+fourcc = cv2.VideoWriter_fourcc(*'XVID')
+out = cv2.VideoWriter('output.avi', fourcc, 20.0, (640, 480))
 
 # loop runs if capturing has been initialized. 
 while(True):
@@ -26,7 +26,7 @@ while(True):
     gray = cv2.Canny(frame, 100, 100)
     
     # output the frame
-    out.write(gray) 
+    out.write(frame) 
     
     # The original input frame is shown in the window 
     cv2.imshow('Original', frame)
