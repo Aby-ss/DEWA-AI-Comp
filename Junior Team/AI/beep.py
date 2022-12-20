@@ -5,6 +5,8 @@ from rich.panel import Panel
 from rich import box
 from rich.console import Console
 
+import winsound
+
 console = Console()
 
 def beep():
@@ -12,6 +14,7 @@ def beep():
     
     for i in range(0, 10):
         console.log(beep)
+        winsound.Beep(2500, 100)
     
 
 beep()

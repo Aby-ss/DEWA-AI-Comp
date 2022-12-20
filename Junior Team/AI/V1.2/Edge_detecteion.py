@@ -12,8 +12,8 @@ install(show_locals = True)
 cap = cv2.VideoCapture(0)  
 
 # Define the codec and create VideoWriter object
-fourcc = cv2.VideoWriter_fourcc(*'XVID')
-out = cv2.VideoWriter('output.avi', fourcc, 20.0, (640, 480))
+fourcc = cv2.VideoWriter_fourcc(*'mp4v')
+out = cv2.VideoWriter('output.mp4', fourcc, 20.0, (640, 480))
 
 # loop runs if capturing has been initialized. 
 while(True):
@@ -44,11 +44,3 @@ cap.release()
 # After we release our webcam, we also release the out-out.release() 
 # De-allocate any associated memory usage 
 cv2.destroyAllWindows()
-    
-    
-    
-    
-    
-    
-    
-    
