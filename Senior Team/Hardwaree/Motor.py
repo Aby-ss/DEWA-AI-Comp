@@ -2,7 +2,7 @@ from time import sleep
 from guizero import App, Text, PushButton
 from guizero import Robot, LED
 
-motor = Robot(left=(4, 14), right=(17, 18))
+motor = Robot(left=(4), right=(17))
 motorSwitch = LED(27)
 
 app = App(title = "LOGIC GATE - - MOVEMENT", layout="grid", height=601, width=801)
