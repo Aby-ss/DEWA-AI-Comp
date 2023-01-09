@@ -1,12 +1,12 @@
 from time import sleep
 from guizero import App, Text, PushButton
-from gpiozero import Motor, LED
+from gpiozero import Robot, LED
 
-motor = Motor(17,18)
+motor = Robot(left=(4, 14), right=(17, 18))
 motorSwitch = LED(27)
 
 app = App(title="GUI Development", layout="grid", height=600, width=800)
-message = Text(app, text="Single Motor Control Interface", grid=[4,0])
+message = Text(app, text="Dual Motor Control Interface", grid=[4,0])
 
 motorSpeedForward = 0
 motorSpeedBackward = 0
