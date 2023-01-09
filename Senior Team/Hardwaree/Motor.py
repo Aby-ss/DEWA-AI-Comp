@@ -1,6 +1,6 @@
 from time import sleep
-from guizero import App, Text, PushButton
-from guizero import Robot, LED
+from gpiozero import App, Text, PushButton
+from gpioizero import Robot, LED
 
 motor = Robot(left=(4), right=(17))
 motorSwitch = LED(27)
