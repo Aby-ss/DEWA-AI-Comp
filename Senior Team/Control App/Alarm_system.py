@@ -1,6 +1,7 @@
 import cv2
 
 import threading
+import imutils
 
 from rich import box
 from rich import print
