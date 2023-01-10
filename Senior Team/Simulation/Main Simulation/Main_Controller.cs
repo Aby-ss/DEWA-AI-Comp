@@ -29,7 +29,7 @@ public class Controller : MonoBehaviour {
         Quaternion rotation;
         collider.GetWorldPose(out position, out rotation);
      
-        visualWheel.transform.position = position;
+        visualWheel.transform.position = position; 
         visualWheel.transform.rotation = rotation;
     }
      

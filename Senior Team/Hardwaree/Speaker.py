@@ -1,12 +1,17 @@
 import cv2
 import imutils
 
+from playsound import playsound
+
 import threading
 from playsound import playsound
 
 from rich import box
 from rich import print
 from rich.panel import Panel
+
+def beep():
+    playsound("beep.wav")
 
 def beep():
     playsound("beep.wav")
