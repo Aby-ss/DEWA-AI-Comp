@@ -1,8 +1,7 @@
 import cv2
-import imutils
 
 import threading
-import winsound
+import imutils
 
 from rich import box
 from rich import print
@@ -28,8 +27,17 @@ def alarm_bleep():
         if not alarm_mode:
             break
         print(Panel("[b]ALARM !!", title = "[b]ALERT 🟥", title_align = "left", box = box.SQUARE, border_style = "bold red"))
-        winsound.Beep(2500, 100)
-    alarm = False
+        try:
+            import winsound
+        except ImportError:
+            import os
+            def playsound(frequency,duration):
+                #apt-get install beep
+                os.system('beep -f %s -l %s' % (frequency,duration))
+        else:
+            def playsound(frequency,duration):
+                winsound.Beep(frequency,duration)
+            alarm = False
     
 while True:
     _, frame = cap.read()
