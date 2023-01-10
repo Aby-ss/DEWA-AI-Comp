@@ -2,12 +2,14 @@ import cv2
 import imutils
 
 import threading
+from playsound import playsound
 
 from rich import box
 from rich import print
 from rich.panel import Panel
 
-
+def beep():
+    playsound("beep.wav")
 
 def alarm_bleep():
     global alarm
@@ -16,6 +18,7 @@ def alarm_bleep():
             break
         print(Panel.fit("[b]ALARM !!", title = "[b]ALERT 🟥", title_align = "left", box = box.SQUARE, border_style = "bold red"))
         # New code
+        beep()
     alarm = False
 
 
