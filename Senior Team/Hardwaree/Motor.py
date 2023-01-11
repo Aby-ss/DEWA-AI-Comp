@@ -2,7 +2,7 @@ from time import sleep
 from guizero import App, Text, PushButton
 from gpiozero import Robot, LED
 
-motor = Robot(left=(4, 14), right=(17, 18))
+motor = Robot(left=(14), right=(18)) # testable
 motorSwitch = LED(27)
 
 app = App(title="GUI Development", layout="grid", height=600, width=800)
