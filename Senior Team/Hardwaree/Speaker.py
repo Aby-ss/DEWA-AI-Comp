@@ -33,7 +33,6 @@ cap.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
 cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
 
 _, start_frame = cap.read()
-start_frame = imutils.resize(start_frame, width = 500)
 start_frame = cv2.cvtColor(start_frame, cv2.COLOR_BGR2GRAY)
 start_frame = cv2.GaussianBlur(start_frame, (21, 21), 0)
 
@@ -44,7 +43,6 @@ alarm_counter = 0
     
 while True:
     _, frame = cap.read()
-    frame = imutils.resize(frame, width=500)
     
     if alarm_mode:
         frame_bw = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
