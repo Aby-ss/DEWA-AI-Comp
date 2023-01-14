@@ -36,8 +36,8 @@ print("""
 ╚══════╝╚═════╝  ╚═════╝ ╚══════╝    ╚═════╝ ╚══════╝   ╚═╝   ╚══════╝ ╚═════╝   ╚═╝   ╚═╝ ╚═════╝ ╚═╝  ╚═══╝      
 """)
 
-import Edge_detecteion as ed
-ed.edge_detect()
+import Edge_detect as ed
+
 
 print(Panel.fit("[b red]The Edge Detection[/] feature detects all the edges of any surface shown on the camera feed and processes them into a black and white video format so we can\neasily spot any uneven surfaces or cracks.\nThe system then saves a recording of this footage which can be analyzed by the staff.", title = "Explanation", title_align="left", box = box.SQUARE, subtitle=" ... "))
 
