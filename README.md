@@ -7,7 +7,7 @@ Use `pip install dependencies.txt` to install all the required packages and depe
 
 
 ## Members 👦🏻👩🏻
-Senior Team : Rao (@CodingAssassins) | Naomi | Adam Bassam (@moonlightdisc) | Dia
+Senior Team : | Bilal | Rao (@CodingAssassins) | Naomi | Adam Bassam (@moonlightdisc) | Dia
 
 Junior Team : Jack | Crispher | Hannah | Harvent
 
